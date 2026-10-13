@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سلام بابا ❤️</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: Tahoma, sans-serif;
+background: linear-gradient(135deg, #4a90e2 0%, #50e3c2 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+color: #333;
+}
+.card {
+background: white;
+padding: 30px;
+border-radius: 20px;
+box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+text-align: center;
+max-width: 400px;
+width: 85%;
+}
+.heart {
+font-size: 55px;
+color: #e63946;
+animation: pulse 1.2s infinite;
+margin-bottom: 10px;
+}
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.2); }
+100% { transform: scale(1); }
+}
+h1 {
+color: #1d3557;
+font-size: 24px;
+margin-bottom: 15px;
+}
+p {
+font-size: 18px;
+line-height: 1.8;
+color: #457b9d;
+margin-bottom: 25px;
+}
+.btn {
+background: #1d3557;
+color: white;
+border: none;
+padding: 12px 25px;
+border-radius: 25px;
+font-size: 16px;
+cursor: pointer;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+transition: 0.3s;
+margin: 5px;
+}
+.btn-yeti {
+background: #f4a261;
+}
+.btn:hover {
+opacity: 0.8;
+transform: translateY(-2px);
+}
+#reply, #yeti-req {
+margin-top: 20px;
+font-size: 18px;
+font-weight: bold;
+color: #2a9d8f;
+display: none;
+padding: 10px;
+border-top: 1px solid #eee;
+}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="heart">❤️</div>
+<h1>سلام بابا</h1>
+<p>
+خوبی؟ بهتری؟<br>
+امیدوارم همیشه سلامت و سرحال باشی.
+</p>
+<button class="btn" onclick="showReply()">سلام</button>
+<button class="btn btn-yeti" onclick="showYeti()">درخواست ویژه</button>
+
+<div id="reply">همیشه سلامت و تندرست باشی ❤️</div>
+<div id="yeti-req">بابا میشه کیت ربات یتی رو برام بگیری؟ خیلی به درسم کمک می‌کنه!</div>
+</div>
+<script>
+function showReply() {
+document.getElementById('reply').style.display = 'block';
+document.getElementById('yeti-req').style.display = 'none';
+}
+function showYeti() {
+document.getElementById('yeti-req').style.display = 'block';
+document.getElementById('reply').style.display = 'none';
+}
+</script>
+</body>
+</html>
